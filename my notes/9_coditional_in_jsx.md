@@ -1,4 +1,18 @@
+***** #9: React Conditional rendering in JSX : React v19 Tutorial in Hindi ***
+-------------------------
+****Conditionals in JSX****
 
+* You can either return a JSX early or you can use ternary operators for
+conditionals in JSX.
+
+* return <p>{ age >= 18 ? “Adult” : “Minor” }</p>
+
+* return <p>{ age >= 18 && “You can vote” }</p> y
+
+* return <p>{ username || “Guest” }</p>
+
+
+example:-
 const App = () => {
   return (
          <>
@@ -19,20 +33,10 @@ let summary="Baek Hyun-woo and Hong Hae-in navigate a tense relationship,both at
 const returnGenver=()=>{
   return "romantic";
 }
-let userAge=18;
-const canWatch=()=>{
-  if(userAge>=18){
-    return "Available for Adult"
-  }
-  else{
-    return " not Available for child"
 
-  }
-}
+// let userAge=23;
 // let userAge=17;
-
-// let userAge=19;
-
+let userAge=18;
   return (
     <div>
       <div>
@@ -44,13 +48,9 @@ const canWatch=()=>{
         </p>
         <p>view:-{234+67}K</p>
         <p>Genre:{returnGenver()}</p>
-        <button>{canWatch()}</button>
+        <button>{userAge>=18?"watch Now":"You can't watch"}</button>
       </div>
     </div>
   );
- 
-}
-
-
-
-
+};
+--------------------------------
