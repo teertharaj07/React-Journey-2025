@@ -1,68 +1,90 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/*? this file contains global CSS style that to the entire application .it allow  you to define style that should be applied globally ,affecting all components within the app. */
+/* base rule  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+
+h1{
+  font-size: 3.2rem;
+}
+p,
+li,
+a,
+label {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color: var(--para-color);
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+li {
+  list-style: none;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* theme */
+
+:root {
+  --main-color: #0062ff;
+  --supporting-color: #ebf3fe;
+  --font-color: #424242;
+  /* --bg-color: #ffffff; */
+  --bg-color: #f7fcff;
+  --heading-color: #000a19;
+  --hero-heading-color: #003b99;
+  --white-color: #ffffff;
+  --para-color: #504e4d;
+  --bnt-hover-bg-color: #003b99;
+  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --footer-bg-color: #040d12;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* layout */
+
+.container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 9.6rem 2.4rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
