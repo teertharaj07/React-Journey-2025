@@ -2,7 +2,8 @@
 // import NetflixSeries from "./components/NetflixSeries";
 // import {NetflixSeries,Footer,Header} from "./components/NetflixSeries";
 import NetflixSeries from "./components/NetflixSeries";
-import "./components/netflix.css"
+// import "./components/netflix.css"
+import "./components/netflix.module.css"
 
 const App = () => {
   return <section className="container">
