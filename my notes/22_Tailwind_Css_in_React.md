@@ -32,7 +32,7 @@ step 3 install tailwind config file
 npx tailwindcss init -p
 
 
-step 4 in tailwind.cnfig replace this line
+step 4 in tailwind.config replace this line
  content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -60,3 +60,5 @@ export default function App() {
 
 
   <div className="flex flex-col gap-6 py-6 px-6 ">
+
+  <div className="flex flex-col gap-6 py-[3.2rem] px-[1.2rem]">
