@@ -67,7 +67,8 @@ export const SeriesCard = ({ data }) => {
           <img src={img_url} alt={name} width="40%" height="40%" />
         </div>
       </div>
-      <div className={styles["card-content"]}>
+      {/* <div className={styles["card-content"]}> */}
+      <div className="flex flex-col gap-6 py-[3.2rem] px-[1.2rem]">
         <h2>Name:{name}</h2>
 
         {/* <h3 style={{ margin: "1.2rem 0" }}>
@@ -81,7 +82,7 @@ export const SeriesCard = ({ data }) => {
         </Rating>
         
 
-        <p>summary:{description}</p>
+        <p className="text-3xl font-bold underline text-cyan-300">summary:{description}</p>
 
         <p>Genre:{genre.join(", ")}</p>
         <p>Cast:{cast.join(", ")}</p>
@@ -90,7 +91,7 @@ export const SeriesCard = ({ data }) => {
           {/* <ButtonTeerth>watch now</ButtonTeerth> */}
           <ButtonTeerth rating={ratingClass}>watch now</ButtonTeerth>
         </a>
-      </div>
+     </div>
     </li>
   );
 };
