@@ -1,17 +1,10 @@
 import { useState } from "react";
 
 export const State = () => {
-  // let value = 0;
-  // const handleButtonClick = () => {
-    // value++;
-    // console.log(value);
-    
-  // };
-  // console.log(useState());
-  // let array=useState();
-  // let [count,setCount]=useState();
-  // console.log(array);
-  let [count,setCount]=useState(0);
+
+let [count,setCount]=useState(0);
+console.log("Parent Components renderd");
+
  const handleButtonClick=()=>{
   setCount(()=> count+1);
  }
@@ -21,10 +14,21 @@ export const State = () => {
 
   return (
     <>
-     <section className="main-div">
+     <div className="main-div">
      <h1>{count}</h1>
      <button onClick={handleButtonClick}>Increment</button>
-     </section>
+     
+     </div>
+     < ChildComponent   count={count} />
     </>
   );
 };
+
+
+function ChildComponent({count}) {
+  console.log("Child Components renderd");
+  return <div>Child Componets-{count}</div>
+  
+}
+
+
