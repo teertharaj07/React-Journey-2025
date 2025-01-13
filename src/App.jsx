@@ -1,11 +1,12 @@
-import {State} from "./components/hooks/State.jsx";
+// import {State} from "./components/hooks/State.jsx";
 import "./components/EV.css";
+import {DerivedState} from"./components/DericedState.jsx"
+
 
 const App = () => {
   return (
     <section className="container">
-      <State />
-   
+    <DerivedState />
     </section>
   );
 };
