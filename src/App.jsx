@@ -1,16 +1,16 @@
 
 import "./components/EV.css";
 
-// import { LiftingState } from "./components/LIftingState.jsx";
-// import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch.jsx";
-// import { Todo } from "./projects/Todo/Todo.jsx";
-import { Todo } from "./projects/Todo/Todo";
 
+// import { Todo } from "./projects/Todo/Todo.jsx";
+// import { Todo } from "./projects/Todo/Todo";
+import { Help } from "./projects/Todo/Help.jsx";
 
 const App = () => {
   return (
     <section>
-  <Todo />
+  {/* <Todo /> */}
+  <Help />
     </section>
   );
 };
