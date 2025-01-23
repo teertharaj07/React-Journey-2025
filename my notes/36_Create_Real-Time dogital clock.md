@@ -1,4 +1,9 @@
-import { useEffect, useState } from "react";
+****36: Create a Real-Time Digital Clock in React – Display Current Date and Time in Todo App******
+--------------------------------------------------
+Learn how to create a real-time clock in React that displays the current date and time, updating every second. This tutorial covers the basics of setting up a dynamic digital clock using React hooks like useState and useEffect, ensuring your clock remains accurate and responsive. Perfect for enhancing your React projects with real-time functionality.
+-----------------------------------------------
+
+import { useState } from "react";
 import "./Todo.css";
 import { MdCheck } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
@@ -34,26 +39,27 @@ export const Todo = () => {
     setInputValue("");
   };
 
-  // console.log("hey"); // componets rereder
+// console.log("hey");  componets rereder
+
+
 
   // todo Date and Time
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const now = new Date();
-      const formattedDate = now.toLocaleDateString();
 
-      const formattedTime = now.toLocaleTimeString();
-      setDateTime(`${formattedDate} - ${formattedTime}`);
-    }, 1000);
+  setInterval(() => {
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString();
 
-    return () => clearInterval(interval);
-  }, []);
+    const formattedTime = now.toLocaleTimeString();
+    setDateTime(`${formattedDate} - ${formattedTime}`);
+  }, 1000);
 
   return (
     <section className="todo-container">
       <header>
         <h1>Todo List</h1>
-        <h2 className="date-time">{dateTime}</h2>
+        <h2 className="date-time">
+         {dateTime}
+        </h2>
       </header>
       <section className="form">
         <form onSubmit={handleFormSubmit}>
@@ -95,3 +101,8 @@ export const Todo = () => {
     </section>
   );
 };
+
+
+
+---------is code ke ander every second componets re-render ho rha h jisse ki hamari memory conflict ho rhi h to
+==========================================
