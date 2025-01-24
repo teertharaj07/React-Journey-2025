@@ -186,6 +186,7 @@
   }
   
   .clear-btn {
+
     background-color: #e74c3c;
     font-size: 1.6rem;
     padding: 1rem 2.2rem;
@@ -194,6 +195,8 @@
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
     -o-border-radius: 0.3rem;
+    
+    
   }
   
   .clear-btn:hover {

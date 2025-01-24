@@ -49,6 +49,39 @@ export const Todo = () => {
     return () => clearInterval(interval);
   }, []);
 
+
+
+
+
+  //todo handleDeleteTodo function
+  const handleDeleteTodo=(value,index)=>{
+    console.log(task);
+    console.log(value);
+    // console.log(index);
+    // task.splice(index,1);
+
+    const updatedTask=task.filter((curTask)=> curTask!==value);
+    setTask(updatedTask);
+
+    
+    
+    
+  }
+
+  //todo  handleClearAllTodo function
+  const handleClearTodoData=()=>{
+    console.log(task);
+    // task.splice(0,task.length); //way 1
+
+    // const clearAllTask=task.filter(()=> false);
+    // setTask(clearAllTask); //way 2
+    setTask([]); // set task ko empty array banana
+    
+    
+  }
+  
+
+
   return (
     <section className="todo-container">
       <header>
@@ -84,14 +117,19 @@ export const Todo = () => {
                 <button className="check-btn">
                   <MdCheck />
                 </button>
-                <button className="delete-btn">
+                <button className="delete-btn" onClick={()=>handleDeleteTodo(curTask,index)}>
                   <MdDeleteForever />
                 </button>
               </li>
             );
           })}
         </ul>
+        
       </section>
+
+      <section>
+          <button className="clear-btn"  onClick={handleClearTodoData} > Clear all</button>
+        </section>
     </section>
   );
 };
