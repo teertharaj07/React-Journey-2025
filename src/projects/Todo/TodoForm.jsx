@@ -3,17 +3,17 @@ import { useState } from "react";
 export const TodoForm =({onAddTodo})=>{
 
       //state variable
-      const [inputValue, setInputValue] = useState("");
+      const [inputValue, setInputValue] = useState({});
 
        // handle input chaging value
   const handleInputChange = (value) => {
-    setInputValue(value);
+    setInputValue({id:value,content:value,checked:false});
   };
 
 const handleFormSubmit=(event)=>{
     event.preventDefault();
     onAddTodo(inputValue);
-    setInputValue("");
+    setInputValue({id:"",content:"",checked:""});
 }
 
 
@@ -25,7 +25,7 @@ const handleFormSubmit=(event)=>{
               type="text"
               className="todo-input"
               autoComplete="off"
-              value={inputValue}
+              value={inputValue.content}
               onChange={(event) => handleInputChange(event.target.value)}
             />
           </div>
