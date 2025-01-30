@@ -51,6 +51,31 @@ const ShortCircuitExample = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [user, setUser] = useState("");
 
+
+
+
+// this is write way
+  const [count,setCount]=useState()
+  // * Hooks can only be used at the top level of your component.
+  // * Do not call Hooks inside loops, conditions, or nested functions.
+  // we can not define hooks there way
+// if(user){
+//   const [count,setCount]=useState()
+// }
+
+
+// this is write way
+if(user){
+  setCount(count+1)
+}
+
+// wrong way to create hooks
+
+// //normal js functions
+// const getData=()=>{
+//   const [data,setData]=useState(0);
+// }
+// getData();
   return (
     <section className="container short-container">
       <h1>Welcome to the ShortCircuit Evaluation!</h1>
