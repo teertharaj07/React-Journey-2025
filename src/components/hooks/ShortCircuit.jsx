@@ -51,8 +51,6 @@ const ShortCircuitExample = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [user, setUser] = useState("");
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -78,7 +76,6 @@ if(user){
 //   const [data,setData]=useState(0);
 // }
 // getData();
->>>>>>> 544fde700c694119d17510379f25f9dab5e6f902
   return (
     <section className="container short-container">
       <h1>Welcome to the ShortCircuit Evaluation!</h1>
