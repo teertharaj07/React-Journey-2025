@@ -1,12 +1,10 @@
 
 // import { Keys } from "./Keys";
-// import "./components/EV.css";
+import "./components/EV.css";
 
-import { Counter } from "./components/hooks/useState";
+// import { Counter } from "./components/hooks/useState";
+import Challenge from "./components/hooks/useState/Challenge.jsx"
 
-// import ShortCircuitExample from "./components/hooks/ShortCircuit";
-// import { Todo } from "./projects/Todo/Todo.jsx";
-//  import { Todo } from "./projects/Todo/Todo";
 
 
 const App = () => {
@@ -14,7 +12,8 @@ const App = () => {
     <section>
   {/* <Todo /> */}
   {/* <ShortCircuitExample /> */}
-  <Counter />
+  {/* <Counter /> */}
+  <Challenge />
 
     </section>
   );
