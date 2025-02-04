@@ -3,7 +3,10 @@
 import "./components/EV.css";
 
 // import { Counter } from "./components/hooks/useState";
-import Challenge from "./components/hooks/useState/Challenge.jsx"
+// import Challenge from "./components/hooks/useState/Challenge.jsx"
+import ControlledForm  from "./components/hooks/useState/Controlled.jsx"
+
+
 
 
 
@@ -13,7 +16,8 @@ const App = () => {
   {/* <Todo /> */}
   {/* <ShortCircuitExample /> */}
   {/* <Counter /> */}
-  <Challenge />
+  {/* <Challenge /> */}
+  < ControlledForm />
 
     </section>
   );
