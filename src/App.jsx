@@ -1,10 +1,11 @@
 
 // import { Keys } from "./Keys";
-import "./components/EV.css";
+// import "./components/EV.css";
 
 // import { Counter } from "./components/hooks/useState";
 // import Challenge from "./components/hooks/useState/Challenge.jsx"
-import ControlledForm  from "./components/hooks/useState/Controlled.jsx"
+// import ControlledForm  from "./components/hooks/useState/Controlled.jsx"
+import {RegistrationForm} from "./components/hooks/useState/Registration.jsx"
 
 
 
@@ -17,7 +18,8 @@ const App = () => {
   {/* <ShortCircuitExample /> */}
   {/* <Counter /> */}
   {/* <Challenge /> */}
-  < ControlledForm />
+  {/* < ControlledForm /> */}
+  < RegistrationForm />
 
     </section>
   );
