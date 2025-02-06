@@ -5,7 +5,8 @@
 // import { Counter } from "./components/hooks/useState";
 // import Challenge from "./components/hooks/useState/Challenge.jsx"
 // import ControlledForm  from "./components/hooks/useState/Controlled.jsx"
-import {RegistrationForm} from "./components/hooks/useState/Registration.jsx"
+// import {RegistrationForm} from "./components/hooks/useState/Registration.jsx"
+import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact.jsx";
 
 
 
@@ -19,7 +20,8 @@ const App = () => {
   {/* <Counter /> */}
   {/* <Challenge /> */}
   {/* < ControlledForm /> */}
-  < RegistrationForm />
+  {/* < RegistrationForm /> */}
+  < RegistrationFormReact />
 
     </section>
   );
