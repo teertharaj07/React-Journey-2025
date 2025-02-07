@@ -7,7 +7,8 @@
 // import ControlledForm  from "./components/hooks/useState/Controlled.jsx"
 // import {RegistrationForm} from "./components/hooks/useState/Registration.jsx"
 // import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact.jsx";
-import {  LoginForm } from "./components/hooks/useState/LoginForm.jsx";
+// import {  LoginForm } from "./components/hooks/useState/LoginForm.jsx";
+import {  ContactForm} from "./components/hooks/useState/ContactForm.jsx";
 
 
 
@@ -23,7 +24,8 @@ const App = () => {
   {/* < ControlledForm /> */}
   {/* < RegistrationForm /> */}
   {/* < RegistrationFormReact /> */}
-  <LoginForm />
+  {/* <LoginForm /> */}
+  <ContactForm />
 
     </section>
   );
