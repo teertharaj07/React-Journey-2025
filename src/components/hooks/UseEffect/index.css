@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 * {
     margin: 0;
     padding: 0;
@@ -121,7 +122,7 @@
     }
   }
   
-  @import url("https://fonts.googleapis.com/css?family=Lato");
+ 
   
   body {
     background: #00182f;
