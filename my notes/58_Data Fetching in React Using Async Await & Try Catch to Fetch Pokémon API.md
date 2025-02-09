@@ -1,3 +1,31 @@
+****58:Data Fetching in React: Using Async Await & Try Catch to Fetch Pokémon API****
+
+Learn how to enhance your data fetching in React.js by leveraging async await and try catch. This tutorial covers converting traditional fetch methods to async await for cleaner, more efficient code, with practical examples to boost your React development skills. 💸
+
+==============================================================
+  async Await tryCatch()
+
+
+    //using async await  and try and catch
+
+  const fetchPokemon = async () => {
+    try {
+      const res = await fetch(API);
+      const data = await res.json();
+      setPokemon(data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setError(error);
+      setLoading(false);
+    }
+  };
+
+
+
+  final code here
+
+--------------
 import { useEffect, useState } from "react";
 import "./Pokemon.css";
 
