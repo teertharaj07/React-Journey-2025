@@ -5,14 +5,15 @@
 //     );
 // }
 
-import { useContext } from "react";
-import { BioContext } from ".";
+
+import { useBioContext } from ".";
 
 //to get the myName value
 export const Home = () => {
 //   const  myName  = useContext(BioContext);
 //*mulitiple data
-  const  {myName,myAge}  = useContext(BioContext);
+  // const  {myName,myAge}  = useContext(BioContext);
+  const  {myName,myAge}  = useBioContext();
 
 //   return <h1>Hello Context API .my name is {myName}</h1>;
   

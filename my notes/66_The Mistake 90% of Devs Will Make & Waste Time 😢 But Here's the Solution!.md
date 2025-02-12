@@ -79,3 +79,28 @@ const App = () => {
 };
 
 export default App;
+
+
+
+---------
+ContextAPI - Notes
+
+In the Context API, the data provided by a context can only be accessed by the components 
+that are its children within the component tree. This means that any component that needs
+access to the context data must be a descendant of the provider component that supplies 
+the context value. 
+
+
+export function App(){
+ return (
+    <>
+      <BioProvider>
+        <Home />
+        <About />
+        <Service />
+      </BioProvider>
+      
+      
+    </>
+  );
+};

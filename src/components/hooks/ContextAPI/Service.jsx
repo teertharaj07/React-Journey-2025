@@ -1,9 +1,12 @@
-import { useContext } from "react";
-import { BioContext } from ".";
+// import { useContext } from "react";
+// import { BioContext } from ".";
+
+import { useBioContext } from ".";
 
 //to get the myName value
 export const Service = () => {
-  const { myName, myAge } = useContext(BioContext);
+  // const { myName, myAge } = useContext(BioContext);
+    const  {myName,myAge}  = useBioContext();
 
   return (
     <section
