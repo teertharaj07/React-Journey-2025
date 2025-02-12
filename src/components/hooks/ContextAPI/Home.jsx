@@ -15,5 +15,15 @@ export const Home = () => {
   const  {myName,myAge}  = useContext(BioContext);
 
 //   return <h1>Hello Context API .my name is {myName}</h1>;
-  return <h1>Hello Context API .my name is {myName} and my age is {myAge} yrs old</h1>;
+  
+
+  return (
+    <section
+      className={`p-4 h-lvh font-display tracking-wider flex flex-col justify-center items-center bg-white-900 text-white`}
+    >
+      <h1>Hello Context API .my name is {myName} and my age is {myAge} yrs old</h1>
+      ;
+    </section>
+  );
+
 };

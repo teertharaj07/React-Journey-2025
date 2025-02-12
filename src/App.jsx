@@ -1,7 +1,5 @@
 // import { UseRef } from "./components/hooks/useRefs";
 
-
-
 // import { ForwordRefs } from "./components/hooks/useRefs/ForwordRef";
 
 // import { UseId } from "./components/hooks/UseID";
@@ -11,17 +9,23 @@
 import { BioProvider } from "./components/hooks/ContextAPI";
 import { About } from "./components/hooks/ContextAPI/About.jsx";
 import { Home } from "./components/hooks/ContextAPI/Home.jsx";
+import { Service } from "./components/hooks/ContextAPI/Service.jsx";
 
 const App = () => {
   // return <UseRef />
   // return <ForwordRefs />
   // return <UseId />
   // return <ParentComponet />
-  return(
-  <BioProvider>
-    <Home />
-    <About />
-  </BioProvider>
+  return (
+    <>
+      <BioProvider>
+        <Home />
+        <About />
+        <Service />
+      </BioProvider>
+      
+      
+    </>
   );
 };
 
