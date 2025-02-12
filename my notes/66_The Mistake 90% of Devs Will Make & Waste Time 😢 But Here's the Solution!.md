@@ -1,4 +1,4 @@
-****66:The Mistake 90% of Devs Will Make & Waste Time 😢 But Here's the Solution! 65 video******
+****66:The Mistake 90% of Devs Will Make & Waste Time  But Here's the Solution! 65 video******
 
 In this video, we address a common error in React 19 that occurs when trying to access data from a component placed outside the Provider component. Learn why this issue happens, understand the importance of the Context API, and see a practical example of how to avoid this error. This tutorial is essential for React developers who want to ensure their apps run smoothly and avoid common pitfalls. 💸
 
