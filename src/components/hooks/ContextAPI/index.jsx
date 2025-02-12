@@ -19,7 +19,9 @@
 //   </BioContext.Provider>;
 // };
 
-import { createContext, useContext } from "react";
+import { use } from "react";
+// import { createContext, useContext } from "react";
+import { createContext } from "react";
 
 // step : 1 create context(warehouse)
 // eslint-disable-next-line react-refresh/only-export-components
@@ -51,7 +53,10 @@ export const BioProvider = ({ children }) => {
 
 // custom hooks
 export const useBioContext = () => {
-  const context = useContext(BioContext);
+  // const context = useContext(BioContext);
+
+  // react 19 new hook "use"
+  const context = use(BioContext);
   if (context===undefined) {
     throw new Error("Components must be wrappd with BioProvider")
   }
