@@ -1,4 +1,4 @@
-****78:React Router App Layout & Outlet Component: Render Nested Elements in Your React App 77 video RR2****
+****78:React Router App Layout & Outlet Component: Render Nested Elements in Your React App 77 video RR3****
 
 In this video, we'll explore how to create an app layout using React Router and the Outlet component, which allows you to render nested elements like headers and footers across different pages. We'll guide you through setting up a folder structure, creating essential components, and understanding why an app layout is crucial for maintaining a consistent UI. By the end, you'll see how these concepts enhance your React projects, making them more organized and easier to manage. 💸
 

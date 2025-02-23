@@ -1,3 +1,12 @@
+***79:Building a Dynamic Navigation Bar with React Router  77 video RR4****
+
+In this video, you'll learn how to create a dynamic navigation bar using React Router. We'll start by discussing why React is known as a Single Page Application (SPA), then move on to building a simple header using HTML and CSS. You'll see how to make the navigation bar dynamic with the NavLink component from React Router and finish by adding a footer to your app. This tutorial is perfect for developers looking to enhance their React projects with efficient navigation 💸 
+
+-----Navigation Bar IN React----------
+
+Single Page Application
+
+
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {
@@ -52,4 +61,3 @@ export const Header = () => {
     </>
   );
 };
-

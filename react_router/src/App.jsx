@@ -9,6 +9,7 @@ import { About } from "./pages/About";
 import { Movie } from "./pages/Movie";
 import { Contact } from "./pages/Contact";
 import Applayout from "./components/layout/Applayout";
+import "./App.css"
 
 const App = () => {
   const router= createBrowserRouter([
