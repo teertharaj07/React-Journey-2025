@@ -1,8 +1,14 @@
-import { NavLink, useRouteError } from "react-router-dom";
+// import { NavLink, useRouteError } from "react-router-dom";
+import {  useNavigate,useRouteError } from "react-router-dom";
 
 export const ErrorPage = () => {
   const error = useRouteError();
-  //   console.log(error);
+  const navigate=useNavigate();
+
+const handleGoBack=()=>{
+  //  navigate(-1);
+   navigate("/");
+}
 
   if (error.status === 404) {
     return (
@@ -22,16 +28,15 @@ export const ErrorPage = () => {
           </div>
         </div>
 
-        <NavLink to="/" className="btn">
+        {/* <NavLink to="/" className="btn">
           Go Back To HomePage
-        </NavLink>
-        {/* //         <button className="btn" onClick={handleGoBack}>
-//           Go Back
-//         </button> */}
+        </NavLink> */}
+        <button className="btn" onClick={handleGoBack}>
+          Go Back
+        </button>
       </section>
     );
   }
   console.log(error);
   return <h1> The page you are looking does not exist</h1>;
 };
-
