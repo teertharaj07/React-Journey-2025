@@ -1,8 +1,10 @@
-// export const Contact =()=>{
-//     return <h1> this is Contact Page Coming Soon....</h1>
-// }
+****87: Handle Contact Form Data with React Router Form Component & Action RR12 88 video***
 
-import { Form } from "react-router-dom";
+Learn how to effectively handle contact form data in React by leveraging the Form component with the action prop in React Router. This tutorial walks you through setting up the form UI, capturing form data, and processing it with React Router's action prop, making your form handling more efficient and streamlined 💸
+
+
+**** logic function to get the data from to the user
+
 
 export const contactData = async ({ request }) => {
   try {
@@ -15,19 +17,10 @@ export const contactData = async ({ request }) => {
   }
 };
 
-export const Contact = () => {
-  return (
-    <>
-      <section className="container section-contact">
-        <h2 className="section-common--heading">contact us</h2>
-        <p className="section-common--subheading">
-          Get in touch with us. We are always here to help you.
-        </p>
 
-        <div className="section-contact">
-          <div className=" grid grid-two--cols">
-            <div className="contact-content">
-              <Form method="POST" action="/contact">
+****** form stucture
+
+ <Form method="POST" action="/contact">
                 <div className="grid grid-two-cols mb-3">
                   <div>
                     <label htmlFor="username">full name</label>
@@ -71,20 +64,13 @@ export const Contact = () => {
                   </button>
                 </div>
               </Form>
-            </div>
-            <div className="contact-image">
-              <figure>
-                <img
-                  src="/contact.png"
-                  alt="contact pic"
-                  className="contact_image"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-// "Error: You made a POST request to "/contact" but did not provide an `action` for route "0-4", so there is no way to handle the request."
+
+
+App.jsx upadated highlighted part in contact page
+
+                {
+          path: "/contact",
+          element: <Contact />,
+          action:contactData,
+  
+        },
