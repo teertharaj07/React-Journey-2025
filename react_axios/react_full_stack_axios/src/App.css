@@ -1,42 +1,134 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-color: #17202a;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html {
+  font-size: 62.5%;
+  font-family: "urbanist";
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+p,
+a,
+li,
+input {
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.5;
+  color: #fff;
+
+}
+li{
+  list-style:  none;
+}
+button {
+  padding: 0.8rem 3.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 0;
+  background-color: hsl(160, 80%, 48%);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  margin-left: 1.2rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: hsl(160, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(9, 172, 115) 0px 7px 19px 0px;
+}
+
+/* ================================================ */
+
+.main-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-form {
+  padding: 1.6rem;
+  background-color: #212f3d;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  margin: 3.2rem auto;
+
+  form {
+    display: flex;
+    gap: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  & input {
+    width: 24rem;
+    color: #212f3d;
+    border: 0.1rem solid grey;
+    outline: none;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    padding: 0.8rem 1.2rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.section-post {
+  width: 90%;
+
+  & ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+
+    & li {
+      background-color: #212f3c;
+      padding: 1.6rem;
+      border-radius: 0.3rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      -o-border-radius: 0.3rem;
+      list-style-position: inside;
+      border-left: 0.2rem solid #fff;
+    }
+
+    & .btn-delete {
+      background-color: #e74c3c;
+
+      &:hover {
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
+      }
+    }
   }
 }
 
-.card {
-  padding: 2em;
+@media screen and (max-width: 980px) {
+  .section-form form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-post ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media screen and (max-width: 720px) {
+  .section-post ol {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
