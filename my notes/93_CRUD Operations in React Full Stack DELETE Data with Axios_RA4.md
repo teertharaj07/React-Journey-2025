@@ -1,3 +1,40 @@
+*****93:CRUD Operations in React Full Stack: DELETE Data with Axios RA4*******
+In this video, you'll learn how to use the HTTP DELETE method in Axios to remove posts from your full stack React app. We'll cover how the delete functionality works, handle API requests efficiently, and demonstrate how to delete data with a smooth user experience. Real-life example: deleting an unwanted comment from a social media post in one click. Watch this tutorial to master data deletion in React. 💸
+
+
+we coverd before http of get mathod
+
+and in thi lecture we will cover delete mathod
+
+----
+real life appliction of you can use this functionality 
+ we can edit ,delete,read ,get with api (json file)
+
+-------------HTTP DELETE METHOD------------
+PostApi.jsx
+import axios from  "axios";
+
+//create the instance of api
+const api =axios.create({
+    // baseURL:"https://jsonplaceholder.typicode.com/posts",
+    baseURL:"https://jsonplaceholder.typicode.com",
+});
+
+// get method
+export const getPost=()=>{
+    // Routes 
+    return api.get("/posts")
+}
+
+// delete method
+export const deletePost=(id)=>{
+   
+    return api.delete(`/posts/${id}`);
+}
+
+----------------------------------
+Posts.jsx
+
 import { useEffect, useState } from "react";
 import { deletePost, getPost } from "../api/PostApi";
 import "../App.css";
