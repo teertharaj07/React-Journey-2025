@@ -24,3 +24,11 @@ export const postData=(post)=>{
    
     return api.post("/posts",post);
 }
+
+
+
+// Put method or pach mathod
+export const updateData=(id,post)=>{
+   
+    return api.put(`/posts/${id}`,post);
+}
