@@ -70,12 +70,55 @@ nav ul {
   display: none;
 }
 
+
+
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-section {
+  background: #151414;
+  
+  color: white;
+}
+
+.container{
+  padding-top:20px;
+}
+.icon{
+  font-size: 25px;
+}
+.footer-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  & p {
+    font-size: 1.5rem;
+    color: #757575;
+  }
+
+  & p:first-child {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+
 /* media queries  */
 @media screen and (max-width: 998px) {
   .menu-web {
     display: none;
   }
-
+.footer-section{
+display: block;
+}
   .ham-menu {
     display: inline-block;
     /* justify-content: flex-end; */
